@@ -1,16 +1,16 @@
 import org.openqa.selenium.WebDriver;
 
-public class OrderFormStep extends OrderFormObject {
+public class StepPage extends BasePage {
 
 
-    public OrderFormStep(WebDriver driver) {
+    public StepPage(WebDriver driver) {
         super(driver);
     }
+
     public void fillForm(String surname,String name){
         fillInputSurname(surname);
         fillInputName(name);
         selectMaleGender();
         clickButtonSubmit();
-
     }
 }
