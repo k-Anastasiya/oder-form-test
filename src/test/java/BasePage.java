@@ -22,16 +22,17 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
-    public String verifySurname() {
+    public String getValueFieldOfSurname() {
+
         return driver.findElement(SurnameLocator).getText();
     }
-    public String verifyLabelName() {
+    public String getValueFieldOfName() {
         return driver.findElement(NameLocator).getText();
     }
-    public String verifybuttonSubmit() {
+    public String getValueOfButtonSubmit() {
         return driver.findElement(buttonSubmitLocator).getAttribute("value");
     }
-    public String verifyLabelGender() {
+    public String getValueOfLabelGender() {
         return driver.findElement(genderLocator).getText();
     }
 

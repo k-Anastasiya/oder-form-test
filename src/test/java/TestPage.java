@@ -9,22 +9,22 @@ public class TestPage extends BaseTest {
 
     @Test
     public void verifyLabelContainSurnameTest() {
-        Assert.assertEquals("Фамилия", orderFormObject.verifySurname());
+        Assert.assertEquals("Фамилия", orderFormObject.getValueFieldOfSurname());
     }
 
     @Test
     public void verifyLabelContainNameTest() {
-        Assert.assertEquals("Имя", orderFormObject.verifyLabelName());
+        Assert.assertEquals("Имя", orderFormObject.getValueFieldOfName());
     }
 
     @Test
     public void verifyLabelContainGenderTest() {
-        Assert.assertEquals("Пол", orderFormObject.verifyLabelGender());
+        Assert.assertEquals("Пол", orderFormObject.getValueOfLabelGender());
     }
 
     @Test
     public void verifyLabelContainButtonSubmitTest() {
-        Assert.assertEquals("Заказать", orderFormObject.verifybuttonSubmit());
+        Assert.assertEquals("Заказать", orderFormObject.getValueOfButtonSubmit());
     }
 
     @Test
