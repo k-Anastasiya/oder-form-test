@@ -1,9 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-public class OrderFormTest extends OrderFormSetting {
+public class TestPage extends BaseTest {
 
     String surname = "Ivanov";
     String name = "Peter";
@@ -31,9 +29,9 @@ public class OrderFormTest extends OrderFormSetting {
 
     @Test
     public void verifyFillingFormTest() {
-        OrderFormStep orderFormStep = new OrderFormStep(driver);
+        StepPage orderFormStep = new StepPage(driver);
         orderFormStep.fillForm(surname, name);
-        Assert.assertEquals("Заказ Принят!",orderFormObject.getResult());
+        Assert.assertEquals("Заказ Принят!",orderFormObject.getActualResult());
 
     }
 
